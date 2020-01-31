@@ -14,10 +14,10 @@
             </tr>
             </thead>
             <tbody>
-            <tr v-for="p in products">
-                <td>{{ p.name }}</td>
-                <td>${{ p.price }}</td>
-                <td>{{ p.quantity }}</td>
+            <tr v-for="item in products">
+                <td>{{ item.name }}</td>
+                <td>${{ item.price }}</td>
+                <td>{{ item.quantity }}</td>
             </tr>
             <tr>
                 <td><b>Total:</b></td>
@@ -27,7 +27,7 @@
             </tbody>
 
         </table>
-        <p><button v-show="products.length" class='button is-primary' @click='checkout'>Checkout</button></p>
+        <p><button v-show="products.length" class='btn btn-primary' @click='checkout'>Checkout</button></p>
     </div>
 </template>
 

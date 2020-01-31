@@ -1,31 +1,23 @@
 <template>
-    <nav class="nav">
-        <div class="nav-left">
-            <router-link to="/" class="nav-item">
+    <nav class="navbar narvar-default">
+        <div  class="navbar-brand">
+            <router-link to="/">
                 <img src="../assets/logo.jpg" alt="grocery logo">
             </router-link>
         </div>
 
-        <span class="nav-toggle">
-	    <span></span>
-	    <span></span>
-	    <span></span>
-	  </span>
-
-        <div class="nav-right nav-menu">
-            <router-link to="/" class="nav-item is-tab" exact-active-class="is-active">
+        <div class="navbar-text navbar-right">
+            <router-link to="/" class="navbar-link" >
                 Products
             </router-link>
 
-            <div class="nav-item is-tab" >
-                <div class="field is-grouped">
-                    <router-link to='/cart' class="button is-success">
-	            <span class="icon">
-	              <i class="fa fa-shopping-cart"></i>
-	            </span>
-                        <span>Checkout ({{itemsInCart}})</span>
-                    </router-link>
-                </div>
+            <div type='button' class="btn btn-default navbar-link" >
+                <router-link to='/cart'>
+                    <span class="icon">
+                      <i class="fa fa-shopping-cart"></i>
+                    </span>
+                    <span>Checkout ({{itemsInCart}})</span>
+                </router-link>
             </div>
         </div>
     </nav>
@@ -45,13 +37,8 @@
 </script>
 
 <style>
-    .nav {
-        height: auto;
-        margin-bottom: 2rem;
-    }
-
-    .nav-item img {
-        max-height: 8rem;
+    .navbar-brand img {
+        max-height: 3rem;
     }
 
 </style>

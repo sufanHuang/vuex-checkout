@@ -15,3 +15,12 @@
         }
     }
 </script>
+
+<style>
+  #app{
+    font-family: "Bookman Old Style";
+    text-align: center;
+
+  }
+
+</style>
